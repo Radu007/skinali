@@ -8,6 +8,25 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
 @font-face {
   font-family: 'Proxima Nova Semibold';
   src: url("../fonts/ProximaNova-Semibold.eot");
@@ -43,6 +62,7 @@ body {
   padding: 17px 22px;
   color: #507fe1;
   font-family: 'Proxima Nova Semibold',sans-serif;
+  background-color: #ffffff;
 }
 
 .button {
@@ -178,8 +198,20 @@ body {
   font-size: 14px;
 }
 
+@media (max-width: 991px) {
+  .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+}
+
 .hero {
-  background: #f1f1f1 url("../../img/hero/haro-bg.jpg") no-repeat center top 80px;
+  background: #f1f1f1 url("../img/haro-bg.jpg") no-repeat center top 80px;
   background-size: contain;
   padding-top: 220px;
   padding-bottom: 270px;
