@@ -74,8 +74,14 @@ body {
   font-family: 'Proxima Nova Semibold',sans-serif;
 }
 
+.bg-secondary {
+  background: #f1f1f1;
+}
+
 @media (max-width: 576px) {
-  font-size: 12px;
+  .button-b {
+    font-size: 12px;
+  }
 }
 
 .navbar {
@@ -256,5 +262,27 @@ body {
     background-size: 100%;
     background-position: top right;
   }
+}
+
+.offer {
+  padding: 129px 0;
+}
+
+.offer-block {
+  background-color: #fff;
+  padding: 80px;
+}
+
+.offer__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold',sans-serif;
+  margin-bottom: 20px;
+}
+
+.offer__subtitle {
+  display: block;
+  font-size: 21px;
+  margin-bottom: 48px;
 }
 /*# sourceMappingURL=style.css.map */
