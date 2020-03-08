@@ -80,19 +80,22 @@
 					 <form action="#" class="form offer_form">
 						 <div class="form__row">
 
-							 <div class="form__group"><label for="" class="form__label">Вид стекла</label> <!-- /.form__label -->
+							 <div class="form__group">
+								 <label for="" class="form__label">Вид стекла</label> <!-- /.form__label -->
 								<input type="text" class="input form__input">
 							</div>
 							 <!-- /.form__group -->
 
-							 <div class="form__group"><label for="" class="form__label">Ширина, см </label> <!-- /.form__label -->
+							 <div class="form__group">
+								 <label for="" class="form__label">Ширина, см </label> <!-- /.form__label -->
 								<input type="text" class="input form__input">
 							</div>
 
 							 <!-- /.form__group -->
 
-							 <div class="form__group"><label for="" class="form__label">Высота, см</label> <!-- /.form__label -->
-								<input type="text" class="input form__input">
+							 <div class="form__group">
+								 <label for="" class="form__label">Высота, см</label> <!-- /.form__label -->
+								<input type="text" id="margin" class="input form__input">
 							</div>
 
 							 <!-- /.form__group -->
@@ -100,15 +103,19 @@
 						 <!-- /.form__row -->
 
 						 <div class="form__row">
-							 <div class="form__checkbox"><label for=""><input type="checkbox">Монтаж</label></div>
-							 <div class="form__checkbox"><label for=""><input type="checkbox">Доставка</label></div>
+							 <div class="form__checkbox">
+									<input class="checkbox" type="checkbox" id="install">
+									<label class="checkbox-label"  for="install">Монтаж</label></div>
+							 <div class="form__checkbox">
+									<input class="checkbox" type="checkbox" id="delivery">
+								 	<label class="checkbox-label" for="delivery">Доставка</label></div>
 						 </div>
 						 <!-- ./form__row -->
 
 						 <div class="form__row">
-							 <div class="form-group"><input type="text"	placeholder="Ваше имя"></div>
-							 <div class="form-group"><input type="text" placeholder="Ваш телефон"></div>
-							 <div class="form-group"><input type="submit" class="button" value="получить скидк"></div>
+							 <div class="form__group"><input type="text" class="form__input input"	placeholder="Ваше имя"></div>
+							 <div class="form__group"><input type="tel" class="input form__input" placeholder="Ваш телефон"></div>
+							 <div class="form__group"><input type="submit" class="button form__button" value="получить скидк"></div>
 						 </div>
 					 </form>
 				 </div>
@@ -117,6 +124,6 @@
 		 </section>
 		 <!-- /.offer -->
 	 </main>
-
+<script type="text/javascript" src="https://spikmi.com/Widget?Id=2872"></script> 
 </body>
 </html>

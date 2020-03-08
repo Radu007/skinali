@@ -18,6 +18,28 @@ body
 	+bold
 .bg-secondary
 	background: $bg-secondary
-@media ( max-width:576px  )
-	.button-b
+
+.input
+	height: 80px
+	border: 1px solid #dddddd
+	padding-left: 30px
+.checkbox
+	display: none
+	&:checked + label::before
+		background-color: $primary
+	&-label
+		display: flex
+		align-items: center
+		margin-right: 42px
+		&:hover
+			cursor: pointer
+			
+		&::before
+			content: ""
+			width: 30px
+			height: 30px
+			border: 1px solid #dddddd
+			margin-right: 20px
+	@media ( max-width:576px  )
+	.button-o
 		font-size: 12px
