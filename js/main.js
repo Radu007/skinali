@@ -26,10 +26,11 @@ $(window).load(function () {
 			$('.select__dropdown').toggleClass('select__dropdown_open');
 		});
 		  $("a[href^='#']").click(function () {
-				var _href = $(this).attr("href");
+				let _href = $(this).attr("href");
 				$("html, body").animate({
 					scrollTop:$(_href).offset().top -190 +"px"
 				});
 				return false;
-			})
+			});
+			$('input[type="tel"]').mask("+7 (999) 999-99-99");
 });
