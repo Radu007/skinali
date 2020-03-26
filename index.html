@@ -51,7 +51,7 @@
 				 	<a class="navbar__email navbar__small-text" href="mailto:info@mail.cu">info@mail.cu</a>
 				 </div>
 
-				 <button class="button-o navbar__button">Получить консультацию</button>
+				 <a href="#offer" class="button-o navbar__button">Получить консультацию</a>
 				  <!-- /.button-o navbar__button -->
 
 			</div>
@@ -66,7 +66,7 @@
 			 	Гарантия <br>минимальной цены <br>на скинали
 			 </h1>
 			 <span class="hero__subtitle">от 3 000 р/м2</span>
-			 <button class="button hero_button">Заказать скинали</button>
+			 <a href="#offer" class="button hero_button">Заказать скинали</a>
 			 </div>
 		 </div>
 	 <!-- /.hero -->
@@ -74,7 +74,7 @@
  <!-- /.header -->
 
  	<main>
-		 <section class="offer bg-secondary">
+		 <section class="offer bg-secondary" id="offer">
 			 <div class="container">
 				 <div class="offer__block offer-block offer-block_calc-bg">
 					 <h2 class="offer__title">ОСТАВЬТЕ ЗАЯВКУ НА РАСЧЕТ</h2>
@@ -85,7 +85,7 @@
 							 <div class="form__group">
 								 <label for="" class="form__label">Вид стекла</label>
 								  <!-- /.form__label -->
-								<input class="form-control" type="hidden" name="type" value="С печатью">
+								<input class="form-control" type="hidden" name="type" id="select_type" value="С печатью">
 								<div class="select form__select">
 									<div class="select_checked">С печатью</div>
 									<ul class="select__dropdown">
@@ -605,10 +605,10 @@
 								
 						</div>
 						<div class="before-slider-arrows">
-							<button class="arrow arrow-left">
+							<button class="arrow arrow-left" id="left">
 								<img src="img/before-after/left.png" alt="">
 							</button>
-							<button class="arrow arrow-right">
+							<button class="arrow arrow-right" id="right">
 								<img src="img/before-after/right.png" alt="">
 							</button>
 						</div>
@@ -847,23 +847,6 @@
 <script type="text/javascript" src="https://spikmi.com/Widget?Id=2872"></script> 
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.twentytwenty.js"></script>
-<script>
-	$(window).load(function () {
-			$(".before-after").twentytwenty({
-				before_label: 'With skinali', // Set a custom before label
-				after_label: 'Without skinali', // Set a custom after label
-			});
-			$('.before-slider').slick({
-				 draggable: false,
-				 dots: true,
-				 dotsClass: 'before-slider__dots',
-				 prevArrow: $('.arrow-left'),
-				 nextArrow: $('.arrow-right')
-			})
-			$('.menu-button').on('click', function() {
-				$('.menu').toggleClass('menu_active')
-			})
-		});
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
